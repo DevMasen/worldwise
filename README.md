@@ -7,7 +7,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# Get Started with Vite :
+# Get Start with Vite :
 
 ### 1. run: `npm create vite@<version>`
 
@@ -43,3 +43,25 @@ export default defineConfig({
 ```
 
 ### 8. run: `npm run dev`
+
+# Get Start with React Router:
+
+### 1. run: `npm i react-router-dom@<version>`
+
+### 2. go to `<projectName>/src/App.jsx` and add :
+
+```jsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Page from './pages/Page';
+
+function App() {
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="<pageRouteName>" element={<Page />} />
+			</Routes>
+		</BrowserRouter>
+	);
+}
+export default App;
+```
