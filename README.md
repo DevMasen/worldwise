@@ -65,3 +65,5 @@ function App() {
 }
 export default App;
 ```
+
+### 3. link the pages with `<Link to="/<pageName>"/>` or `<NavLink to="/<pageName>"/>`
