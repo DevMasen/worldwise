@@ -84,3 +84,15 @@ const [searchParams, setSearchParams] = useSearchParams();
 const queryVar = searchParams.get('queryVar');
 const setSearchParams({queryVar:newValue});
 ```
+
+### 7. We can navigate the routes with custom hook below:
+
+```jsx
+const navigate = useNavigate();
+function loadForm() {
+	navigate('form');
+}
+function goBack() {
+	navigate(-1);
+}
+```
