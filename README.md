@@ -67,3 +67,7 @@ export default App;
 ```
 
 ### 3. link the pages with `<Link to="/<pageName>"/>` or `<NavLink to="/<pageName>"/>`
+
+### 4. if we wanna use a route as a default route we can use `index` attribute for `<Route/>`
+
+### 5. the `<Outlet/>` Component from React Router allow us to place a nested Route in Parent Route
