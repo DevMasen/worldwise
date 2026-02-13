@@ -96,3 +96,5 @@ function goBack() {
 	navigate(-1);
 }
 ```
+
+### 8. We can navigate to a path with react router `<Navigate/>` component
