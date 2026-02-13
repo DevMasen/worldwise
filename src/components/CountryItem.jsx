@@ -6,8 +6,8 @@ CountryItem.propTypes = {
 function CountryItem({ country }) {
 	return (
 		<li className={styles.countryItem}>
-			<span>{country.emoji}</span>
-			<span>{country.country}</span>
+			<span className={`fi fi-${country.countryCode}`}></span>
+			<span>{country.countryName}</span>
 		</li>
 	);
 }

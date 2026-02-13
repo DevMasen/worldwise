@@ -15,16 +15,14 @@
 	text-decoration: none;
 }
 
+.cityItem :global(.flag) {
+	width: 24px;
+	height: 100%;
+}
+
 .cityItem--active {
 	border: 2px solid var(--color-brand--2);
 	border-left: 5px solid var(--color-brand--2);
-}
-
-.flagContainer {
-	width: 22px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .name {
