@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './CityItem.module.css';
 import PropTypes from 'prop-types';
 CityItem.propTypes = {
@@ -13,14 +14,16 @@ const formatDate = date =>
 	}).format(new Date(date));
 
 function CityItem({ city }) {
-	const { cityName, date, countryCode } = city;
+	const { cityName, date, countryCode, id } = city;
 
 	return (
-		<li className={styles.cityItem}>
-			<span className={`flag fi fi-${countryCode}`}></span>
-			<h3 className={styles.name}>{cityName}</h3>
-			<time className={styles.date}>({formatDate(date)})</time>
-			<button className={styles.deleteBtn}>&times;</button>
+		<li>
+			<Link to={`${id}`} className={styles.cityItem}>
+				<span className={`flag fi fi-${countryCode}`}></span>
+				<h3 className={styles.name}>{cityName}</h3>
+				<time className={styles.date}>({formatDate(date)})</time>
+				<button className={styles.deleteBtn}>&times;</button>
+			</Link>
 		</li>
 	);
 }
