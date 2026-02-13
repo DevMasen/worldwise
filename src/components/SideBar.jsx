@@ -8,7 +8,10 @@ function SideBar() {
 			<AppNav />
 			<p>List of Cities</p>
 			<footer className={styles.footer}>
-				&copy; Copyright {new Date().getFullYear()} by WorldWise Inc.
+				<p className={styles.copyright}>
+					&copy; Copyright {new Date().getFullYear()} by WorldWise
+					Inc.
+				</p>
 			</footer>
 		</div>
 	);
