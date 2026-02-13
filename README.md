@@ -71,3 +71,16 @@ export default App;
 ### 4. if we wanna use a route as a default route we can use `index` attribute for `<Route/>`
 
 ### 5. the `<Outlet/>` Component from React Router allow us to place a nested Route in Parent Route
+
+### 6. We can use the params and query string as states from url with this react router custom hooks :
+
+```jsx
+// Params
+const params = useParams();
+const paramsVar = params.paramsVar;
+
+// QueryString
+const [searchParams, setSearchParams] = useSearchParams();
+const queryVar = searchParams.get('queryVar');
+const setSearchParams({queryVar:newValue});
+```
