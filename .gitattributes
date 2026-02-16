@@ -1,0 +1,9 @@
+# Enforce LF for JSON and common text files across platforms
+*.json text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# Let Git handle other files automatically
+* text=auto
