@@ -1,3 +1,40 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "cityName": "Kerman",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "ir",
+      "date": "2026-02-16T17:27:14.232Z",
+      "notes": "My Home :)",
+      "position": {
+        "lat": 30.285159872426014,
+        "lng": 57.07672119140626
+      },
+      "id": 1
+    },
+    {
+      "cityName": "Mashhad",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "ir",
+      "date": "2026-02-16T17:27:36.848Z",
+      "notes": "My Favorite \n",
+      "position": {
+        "lat": 36.3106987841827,
+        "lng": 59.62554931640625
+      },
+      "id": 2
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "countryCode": "de",
+      "date": "2026-02-16T17:27:56.215Z",
+      "notes": "Love Berlin 🙃",
+      "position": {
+        "lat": 52.53627304145948,
+        "lng": 13.502197265625002
+      },
+      "id": 3
+    }
+  ]
 }
