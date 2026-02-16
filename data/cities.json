@@ -1,64 +1,28 @@
 {
-	"cities": [
-		{
-			"cityName": "Lisbon",
-			"country": "Portugal",
-			"countryCode": "pt",
-			"date": "2027-10-31T15:59:59.138Z",
-			"notes": "My favorite city so far!",
-			"position": {
-				"lat": 38.727881642324164,
-				"lng": -9.140900099907554
-			},
-			"id": 73930385
-		},
-		{
-			"cityName": "Madrid",
-			"country": "Spain",
-			"countryCode": "es",
-			"date": "2027-07-15T08:22:53.976Z",
-			"notes": "",
-			"position": {
-				"lat": 40.46635901755316,
-				"lng": -3.7133789062500004
-			},
-			"id": 17806751
-		},
-		{
-			"cityName": "Berlin",
-			"country": "Germany",
-			"countryCode": "de",
-			"date": "2027-02-12T09:24:11.863Z",
-			"notes": "Amazing 😃",
-			"position": {
-				"lat": 52.53586782505711,
-				"lng": 13.376933665713324
-			},
-			"id": 98443197
-		},
-		{
-			"cityName": "Kerman",
-			"country": "Iran (Islamic Republic of)",
-			"countryCode": "ir",
-			"date": "2026-02-16T14:22:40.541Z",
-			"notes": "my Home 🙃",
-			"position": {
-				"lat": 30.299389313522617,
-				"lng": 57.07647416793314
-			},
-			"id": 98443198
-		},
-		{
-			"cityName": "Tehran",
-			"country": "Iran (Islamic Republic of)",
-			"countryCode": "ir",
-			"date": "2026-02-16T14:23:38.037Z",
-			"notes": "My Capital Town 💖",
-			"position": {
-				"lat": 35.69299463209881,
-				"lng": 51.42386719135029
-			},
-			"id": 98443199
-		}
-	]
+  "cities": [
+    {
+      "cityName": "Kerman",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "ir",
+      "date": "2026-02-16T14:45:57.798Z",
+      "notes": "My Home 🙃",
+      "position": {
+        "lat": 30.30176068632071,
+        "lng": 57.127641725078114
+      },
+      "id": 1
+    },
+    {
+      "cityName": "Baft",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "ir",
+      "date": "2026-02-16T14:49:53.294Z",
+      "notes": "My Love's City 💖🙃",
+      "position": {
+        "lat": 29.250459642950652,
+        "lng": 56.69914353550887
+      },
+      "id": 4
+    }
+  ]
 }
