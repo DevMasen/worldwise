@@ -1,28 +1,3 @@
 {
-  "cities": [
-    {
-      "cityName": "Kerman",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "ir",
-      "date": "2026-02-16T14:45:57.798Z",
-      "notes": "My Home 🙃",
-      "position": {
-        "lat": 30.30176068632071,
-        "lng": 57.127641725078114
-      },
-      "id": 1
-    },
-    {
-      "cityName": "Baft",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "ir",
-      "date": "2026-02-16T14:49:53.294Z",
-      "notes": "My Love's City 💖🙃",
-      "position": {
-        "lat": 29.250459642950652,
-        "lng": 56.69914353550887
-      },
-      "id": 4
-    }
-  ]
+  "cities": []
 }
