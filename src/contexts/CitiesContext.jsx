@@ -35,7 +35,26 @@ function CitiesProvider({ children }) {
 			const data = await res.json();
 			setCurrentCity(data);
 		} catch {
-			alert('Failed to Fetch City!');
+			alert('Failed to download city data!');
+		} finally {
+			setIsLoading(false);
+		}
+	}
+
+	async function createCity(newCity) {
+		setIsLoading(true);
+		try {
+			const res = await fetch(`${BASE_URL}/cities/`, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(newCity),
+			});
+			const data = await res.json();
+			setCitites([...cities, data]);
+		} catch {
+			alert('Failed to upload city data!');
 		} finally {
 			setIsLoading(false);
 		}
@@ -48,6 +67,7 @@ function CitiesProvider({ children }) {
 				isLoading,
 				currentCity,
 				getCity,
+				createCity,
 			}}
 		>
 			{children}

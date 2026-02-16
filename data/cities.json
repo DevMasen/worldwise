@@ -35,6 +35,30 @@
 				"lng": 13.376933665713324
 			},
 			"id": 98443197
+		},
+		{
+			"cityName": "Kerman",
+			"country": "Iran (Islamic Republic of)",
+			"countryCode": "ir",
+			"date": "2026-02-16T14:22:40.541Z",
+			"notes": "my Home 🙃",
+			"position": {
+				"lat": 30.299389313522617,
+				"lng": 57.07647416793314
+			},
+			"id": 98443198
+		},
+		{
+			"cityName": "Tehran",
+			"country": "Iran (Islamic Republic of)",
+			"countryCode": "ir",
+			"date": "2026-02-16T14:23:38.037Z",
+			"notes": "My Capital Town 💖",
+			"position": {
+				"lat": 35.69299463209881,
+				"lng": 51.42386719135029
+			},
+			"id": 98443199
 		}
 	]
 }
