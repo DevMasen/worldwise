@@ -1,19 +1,35 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-// import { useSearchParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import {
+	MapContainer,
+	TileLayer,
+	Marker,
+	Popup,
+	useMap,
+	useMapEvents,
+} from 'react-leaflet';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import styles from './Map.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useCities } from '../contexts/CitiesContext';
 function Map() {
-	// const [searchParams, setSearchParams] = useSearchParams();
-	// const lat = searchParams.get('lat');
-	// const lng = searchParams.get('lng');
-	const [mapPosition] = useState([0, 0]);
+	const [searchParams] = useSearchParams();
+	const mapLat = searchParams.get('lat');
+	const mapLng = searchParams.get('lng');
+	const [mapPosition, setMapPosition] = useState({ lat: 32.4, lng: 53.6 });
 	const { cities } = useCities();
+
+	useEffect(
+		function () {
+			if (mapLat && mapLng) setMapPosition({ lat: mapLat, lng: mapLng });
+		},
+		[mapLat, mapLng],
+	);
+
 	return (
 		<div className={styles.mapContainer}>
 			<MapContainer
-				center={mapPosition}
-				zoom={13}
+				center={{ lat: mapPosition.lat, lng: mapPosition.lng }}
+				zoom={5}
 				scrollWheelZoom={true}
 				className={styles.map}
 			>
@@ -29,14 +45,34 @@ function Map() {
 						<Popup>
 							<span
 								className={`fi fi-${city.countryCode}`}
-							></span>{' '}
+							></span>
 							<span>{city.cityName}</span>
 						</Popup>
 					</Marker>
 				))}
+				<ChangeCenter position={mapPosition} />
+				<DetectClick />
 			</MapContainer>
 		</div>
 	);
+}
+
+ChangeCenter.propTypes = {
+	position: PropTypes.array,
+};
+
+function ChangeCenter({ position }) {
+	useMap().setView({ lat: position.lat, lng: position.lng });
+	return null;
+}
+
+function DetectClick() {
+	const navigate = useNavigate();
+	useMapEvents({
+		click(e) {
+			navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
+		},
+	});
 }
 
 export default Map;
