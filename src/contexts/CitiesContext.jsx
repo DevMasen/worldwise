@@ -1,14 +1,12 @@
 import { createContext, useEffect, useContext, useReducer } from 'react';
+///////////////////////////////////////////////////////////////////////////
 import PropTypes from 'prop-types';
-
-const CitiesContext = createContext();
-
-const BASE_URL = 'http://localhost:8000';
-
 CitiesProvider.propTypes = {
 	children: PropTypes.element,
 };
-
+///////////////////////////////////
+const CitiesContext = createContext();
+const BASE_URL = 'http://localhost:8000';
 const initialState = {
 	cities: [],
 	currentCity: {},

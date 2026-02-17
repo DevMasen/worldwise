@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-
+//////////////////////////////////////////////////////////////////////////
 import { CitiesProvider } from './contexts/CitiesContext';
 import { AuthProvider } from './contexts/AuthContext';
-
+///////////////////////////////////////////////////////////
 import ProtectedRoute from './pages/ProtectedRoute';
 import HomePage from './pages/HomePage';
 import AppLayout from './pages/AppLayout';
@@ -10,12 +10,12 @@ import Product from './pages/Product';
 import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import PageNotFound from './pages/PageNotFound';
-
+/////////////////////////////////////////////////////////////
 import CityList from './components/CityList';
 import CountryList from './components/CountryList';
 import City from './components/City';
 import Form from './components/Form';
-
+//////////////////////////////////////////////////////////////
 function App() {
 	return (
 		<AuthProvider>

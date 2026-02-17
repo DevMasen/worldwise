@@ -1,14 +1,17 @@
+import styles from './SideBar.module.css';
+//////////////////////////////////////////
 import { Outlet } from 'react-router-dom';
+//////////////////////////////////////////
 import AppNav from './AppNav';
 import Logo from './Logo';
-import styles from './SideBar.module.css';
+//////////////////////////////
 function SideBar() {
 	return (
 		<div className={styles.sidebar}>
 			<Logo />
 			<AppNav />
 
-			{/* React Router Component acts like children prop  */}
+			{/* React Router Outlet Component acts like children prop  */}
 			<Outlet />
 
 			<footer className={styles.footer}>

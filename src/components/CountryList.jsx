@@ -1,13 +1,17 @@
-import CountryItem from './CountryItem';
 import styles from './CountryList.module.css';
+////////////////////////////////////////////////
+import { useCities } from '../contexts/CitiesContext';
+//////////////////////////////////////////////////////
+import CountryItem from './CountryItem';
 import Spinner from './Spinner';
 import Message from './Message';
+///////////////////////////////////////////
 import PropTypes from 'prop-types';
-import { useCities } from '../contexts/CitiesContext';
 CountryList.propTypes = {
 	cities: PropTypes.array,
 	isLoading: PropTypes.bool,
 };
+////////////////////////////////////////
 function CountryList() {
 	const { cities, isLoading } = useCities();
 	const countries = cities.reduce((arr, city) => {

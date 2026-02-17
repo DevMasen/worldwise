@@ -1,21 +1,18 @@
-// "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=0&longitude=0"
-
-import { useEffect, useReducer } from 'react';
-import { useNavigate } from 'react-router-dom';
-
-import { useCities } from '../contexts/CitiesContext';
-import { useUrlPosition } from '../hooks/useUrlPosition';
-
 import styles from './Form.module.css';
 import 'react-datepicker/dist/react-datepicker.css';
-
+//////////////////////////////////////////
+import { useEffect, useReducer } from 'react';
+import { useNavigate } from 'react-router-dom';
+///////////////////////////////////////////////////
+import { useCities } from '../contexts/CitiesContext';
+import { useUrlPosition } from '../hooks/useUrlPosition';
+///////////////////////////////////////////////////////
 import DatePicker from 'react-datepicker';
-
 import Button from './Button';
 import ButtonBack from './ButtonBack';
 import Spinner from './Spinner';
 import Message from './Message';
-
+///////////////////////////////////////////////////////
 const BASE_URL = 'https://api.bigdatacloud.net/data/reverse-geocode-client';
 const initialState = {
 	cityName: '',

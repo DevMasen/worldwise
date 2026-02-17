@@ -1,7 +1,11 @@
-import { NavLink } from 'react-router-dom';
 import styles from './PageNav.module.css';
-import Logo from './Logo';
+///////////////////////////////////////////
+import { NavLink } from 'react-router-dom';
+////////////////////////////////////////////
 import { useAuth } from '../contexts/AuthContext';
+//////////////////////////////////////////////////
+import Logo from './Logo';
+///////////////////////////
 function PageNav() {
 	const { isAuthenticated } = useAuth();
 	return (

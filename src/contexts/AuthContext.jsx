@@ -1,6 +1,10 @@
 import { createContext, useContext, useReducer } from 'react';
+/////////////////////////////////////////////////////////////
 import PropTypes from 'prop-types';
-
+AuthProvider.propTypes = {
+	children: PropTypes.element,
+};
+/////////////////////////////////////
 const AuthContext = createContext();
 const FAKE_USER = {
 	name: 'Jack',
@@ -13,9 +17,6 @@ const initialState = {
 	isAuthenticated: false,
 };
 
-AuthProvider.propTypes = {
-	children: PropTypes.element,
-};
 function reducer(state, action) {
 	switch (action.type) {
 		case 'login':

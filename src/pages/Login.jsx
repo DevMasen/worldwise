@@ -1,10 +1,13 @@
 import styles from './Login.module.css';
+/////////////////////////////////////////
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+////////////////////////////////////////////////
 import { useAuth } from '../contexts/AuthContext';
-
+//////////////////////////////////////////////////
 import Button from '../components/Button';
 import Logo from '../components/Logo';
+////////////////////////////////////////
 export default function Login() {
 	const navigate = useNavigate();
 	const { login, isAuthenticated } = useAuth();
