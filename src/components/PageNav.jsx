@@ -16,7 +16,7 @@ function PageNav() {
 				</li>
 				{!isAuthenticated && (
 					<li>
-						<NavLink to="login" className={styles.ctaLink}>
+						<NavLink to="/login" className={styles.ctaLink}>
 							LOG IN
 						</NavLink>
 					</li>
