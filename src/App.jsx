@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import { CitiesProvider } from './contexts/CitiesContext';
+import { AuthProvider } from './contexts/AuthContext';
 
 import HomePage from './pages/HomePage';
 import AppLayout from './pages/AppLayout';
@@ -16,27 +17,29 @@ import Form from './components/Form';
 
 function App() {
 	return (
-		<CitiesProvider>
-			<BrowserRouter>
-				<Routes>
-					<Route index element={<HomePage />} />
-					<Route path="product" element={<Product />} />
-					<Route path="pricing" element={<Pricing />} />
-					<Route path="/login" element={<Login />} />
-					<Route path="app" element={<AppLayout />}>
-						<Route
-							index
-							element={<Navigate to="cities" replace />}
-						/>
-						<Route path="cities" element={<CityList />} />
-						<Route path="cities/:id" element={<City />} />
-						<Route path="contries" element={<CountryList />} />
-						<Route path="form" element={<Form />} />
-					</Route>
-					<Route path="*" element={<PageNotFound />} />
-				</Routes>
-			</BrowserRouter>
-		</CitiesProvider>
+		<AuthProvider>
+			<CitiesProvider>
+				<BrowserRouter>
+					<Routes>
+						<Route index element={<HomePage />} />
+						<Route path="product" element={<Product />} />
+						<Route path="pricing" element={<Pricing />} />
+						<Route path="/login" element={<Login />} />
+						<Route path="app" element={<AppLayout />}>
+							<Route
+								index
+								element={<Navigate to="cities" replace />}
+							/>
+							<Route path="cities" element={<CityList />} />
+							<Route path="cities/:id" element={<City />} />
+							<Route path="contries" element={<CountryList />} />
+							<Route path="form" element={<Form />} />
+						</Route>
+						<Route path="*" element={<PageNotFound />} />
+					</Routes>
+				</BrowserRouter>
+			</CitiesProvider>
+		</AuthProvider>
 	);
 }
 

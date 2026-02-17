@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer } from 'react';
-import PropTypes, { func } from 'prop-types';
+import PropTypes from 'prop-types';
 
 const AuthContext = createContext();
 const FAKE_USER = {
