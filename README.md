@@ -1,3 +1,14 @@
+<h1 align="center"> WorldWise 🗺️</h1>
+<p align="center">
+<img align="center" width="720px" src="./public/banner.png" alt="Banner Image">
+</p>
+
+# A React Application for Keep Track of Your Adventures 😃
+
+## A Project by `Jonas Schmedtmann` - React Ultimate Course
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
