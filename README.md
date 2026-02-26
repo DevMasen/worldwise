@@ -7,6 +7,8 @@
 
 ## A Project by `Jonas Schmedtmann` - React Ultimate Course
 
+## Thanks for visiting my GitHub 🫡♥️
+
 ---
 
 # React + Vite
